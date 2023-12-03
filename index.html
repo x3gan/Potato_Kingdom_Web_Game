@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container-left">
+        <h1 id="map-title">Burgonyatérkép</h1>
+        <table id="map">
+            <tbody></tbody>
+        </table>
+        <div id="gameover-text">
+
+        </div>
+        <div class="container">
+            <div class="vertical-center">
+            </div>
+        </div>
+    </div>
+    <div id="container-right">
+        <div id="seasons-score">
+            <div id="spring">Tavasz: <span id="spring-score">0 pont</span></div>
+            <div id="summer">Nyár: <span id="summer-score">0 pont</span></div>
+            <div id="autumn">Ősz: <span id="autumn-score">0 pont</span></div>
+            <div id="winter">Tél: <span id="winter-score">0 pont</span></div>
+        </div>
+        <h3 id="all-time-score">Összesen: <span>0 pont</span></h3>
+        <h2 id="underlined">Jelenlegi évszak: <span id="current-season">Tavasz (AB)</span></h2>
+        <div class="quest-container">
+            <div id="quest-container-ac">
+                <div id="quest-a">
+                    <img src="./assets/quests/Group 68.png" alt="" srcset="">
+                    <div id="bottom-right-a">(0 pont)&emsp;<span id="activity-a">🟢</span> A</div>
+                </div>
+                <div id="quest-c">
+                    <img src="./assets/quests/Group 70.png" alt="" srcset="">
+                    <div id="bottom-right-c">(0 pont)&emsp;<span id="activity-c">⚪</span> C</div>
+                </div>
+
+            </div>
+            <div id="quest-container-bd">
+                <div id="quest-b">
+                    <img src="./assets/quests/Group 69.png" alt="" srcset="">
+                    <div id="bottom-right-b">(0 pont)&emsp;<span id="activity-b">🟢</span> B</div>
+                </div>
+
+                <div id="quest-d">
+                    <img src="./assets/quests/Group 78.png" alt="" srcset="">
+                    <div id="bottom-right-d">(0 pont)&emsp;<span id="activity-d">⚪</span> D</div>
+                </div>
+            </div>
+            <h2 id="rem-time-per-season">Évszakből hátralévő idő: 7/7</h2>
+        </div>
+        <div id="placable-element-container">
+            <div id="place-utilities">
+                <h2 id="utilities-title">Lehelyezendő elem:</h2>
+                <button id="reset">Reset</button>
+                <button id="rotate-btn">Forgatás</button>
+                <br>
+                <button id="mirror-btn">Tükrözés</button>
+            </div>
+            <div id="placable-element">
+                <span id="element-time">-🕓</span>
+                <br>
+                <table id="element-table">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
